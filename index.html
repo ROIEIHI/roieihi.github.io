@@ -34,9 +34,9 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Electrical &amp; Electronics Engineer</p>
+          <p class="eyebrow">Electro-Optics M.Sc. Student · Optical Simulation &amp; ML</p>
           <h1>Roie&nbsp;Ihia</h1>
-          <p class="lead">I design and simulate <span style="color:var(--accent-ink)">silicon-photonic and RF devices</span>, and build the signal-processing and machine-learning pipelines that make sense of their data — from first-author research to CPU-only computer vision.</p>
+          <p class="lead">I simulate and validate <span style="color:var(--accent-ink)">optical and RF systems</span>, coupling multi-physics solvers to machine-learning pipelines that bridge simulated and measured data — from first-author Bayesian optimization to CPU-only computer vision.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="#projects">View projects</a>
             <a class="btn btn-ghost" href="#publications">Read publications</a>
@@ -92,8 +92,13 @@
         <h2 class="section-title">Device physics, met with data.</h2>
         <div class="about-grid">
           <div>
-            <p>I'm an Electrical &amp; Electronics Engineering graduate from the Holon Institute of Technology (HIT). My work sits where hardware meets machine learning: designing and simulating silicon-photonic and RF devices, and building the signal- and image-processing pipelines that turn their measurements into results.</p>
-            <p>That range shows up across my projects — a first-author study using Bayesian optimization to design a photonic modulator, a body-worn antenna simulated in HFSS, a webcam gaze-tracker validated on 187 people, and a critical reproduction of a deepfake detector that exposed where the published method breaks. I care as much about honest evaluation as about a clean result.</p>
+            <div class="intro-row">
+              <img class="profile-photo" src="images/profile.jpg" alt="Portrait of Roie Ihia" />
+              <div>
+                <p>I'm an M.Sc. student in Electro-Optics (Direct Track, cumulative average 97, expected Aug 2027) and a 4th-year B.Sc. student in Signal Processing &amp; Communication (average 92.5, expected Aug 2026) at the Holon Institute of Technology (HIT), focused on the simulation and validation of optical systems. My research centers on ML-driven optical-device simulation: a first-author Bayesian-optimization pipeline coupled to Lumerical multi-physics solvers, and a co-authored real-world optical-sensor data-acquisition study validated across 187 participants.</p>
+              </div>
+            </div>
+            <p>I build automated Python/MATLAB simulation and data-acquisition environments that bridge simulated and measured data. That range shows up across my projects — a body-worn antenna simulated in HFSS, a circular-waveguide mode analysis, and critical reproductions of a deepfake detector, a wavelet-denoising method, and a low-light image-enhancement method that tested where each published claim holds up. I care as much about honest evaluation as about a clean result.</p>
           </div>
           <div class="skills">
             <div class="group">
@@ -174,8 +179,8 @@
             <div class="project-media">
               <div class="gallery" data-gallery>
                 <div class="slides">
-                  <figure class="slide is-active"><img src="images/pin_efficiency_loss.svg" alt="Modulation efficiency versus optical loss, with the located optimum marked" /><figcaption>Efficiency–loss landscape · located optimum inside the target region</figcaption></figure>
-                  <figure class="slide"><img src="images/pin_convergence.svg" alt="Best-found cost versus iteration on a log scale" /><figcaption>Cost convergence · surrogate activates after the blind sampling phase</figcaption></figure>
+                  <figure class="slide is-active"><img src="images/pin_efficiency_loss.png" alt="Modulation efficiency versus optical loss, with the located optimum marked" /><figcaption>Efficiency–loss landscape · located optimum inside the target region</figcaption></figure>
+                  <figure class="slide"><img src="images/pin_convergence.png" alt="Best-found cost versus iteration on a log scale" /><figcaption>Cost convergence · surrogate activates after the blind sampling phase</figcaption></figure>
                 </div>
                 <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
                 <div class="gallery-dots"></div>
@@ -201,9 +206,9 @@
             <div class="project-media">
               <div class="gallery" data-gallery>
                 <div class="slides">
-                  <figure class="slide is-active"><img src="images/antenna_s11.svg" alt="S11 return-loss curve with a resonance at 915 megahertz" /><figcaption>S11 · impedance-matched resonance at 915 MHz</figcaption></figure>
-                  <figure class="slide"><img src="images/antenna_pattern.svg" alt="Realized-gain radiation pattern" /><figcaption>Realized-gain pattern · off-body directionality</figcaption></figure>
-                  <figure class="slide"><img src="images/antenna_model.svg" alt="PIFA placed in the heel counter of a boot in HFSS" /><figcaption>PIFA in the rigid heel counter (HFSS model)</figcaption></figure>
+                  <figure class="slide is-active"><img src="images/antenna_s11.png" alt="S11 return-loss curve with a resonance near 915 megahertz" /><figcaption>S11 · impedance-matched resonance near 915 MHz</figcaption></figure>
+                  <figure class="slide"><img src="images/antenna_pattern.png" alt="Realized-gain radiation pattern" /><figcaption>Realized-gain pattern · off-body directionality</figcaption></figure>
+                  <figure class="slide"><img src="images/antenna_model.png" alt="PIFA placed in the heel counter of a boot in HFSS, with the phantom foot and sole modeled" /><figcaption>PIFA in the rigid heel counter (HFSS model)</figcaption></figure>
                 </div>
                 <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
                 <div class="gallery-dots"></div>
@@ -213,24 +218,47 @@
               <h4>915 MHz PIFA Integrated in a Boot</h4>
               <div class="or-block">
                 <div class="row"><span class="k">Objective</span><p class="v">Design a compact PCB antenna that resonates at 915 MHz while worn on the body, where the foot is a high-loss dielectric that absorbs RF and drags the resonant frequency downward.</p></div>
-                <div class="row"><span class="k">Result</span><p class="v">A quarter-wave PIFA placed in the rigid heel counter — chosen over the sole and top-of-foot for mechanical robustness and radiation direction — matched to 915 MHz and simulated in HFSS with custom foot, leather, rubber, and concrete dielectrics, giving an off-body directional pattern.</p></div>
+                <div class="row"><span class="k">Result</span><p class="v">A quarter-wave PIFA placed in the rigid heel counter — chosen over the sole and top-of-foot for mechanical robustness and radiation direction — matched near 915 MHz and simulated in HFSS with custom foot, leather, rubber, and concrete dielectrics, giving an off-body directional pattern.</p></div>
               </div>
               <div class="tools tags"><span class="tag">Ansys HFSS</span><span class="tag">PIFA</span><span class="tag">Smith-chart matching</span><span class="tag">RF design</span></div>
               <div class="foot"><a href="assets/antenna-report.pdf">Full report (PDF) →</a></div>
             </div>
           </article>
+
+          <article class="project" id="waveguide">
+            <div class="project-media">
+              <div class="gallery" data-gallery>
+                <div class="slides">
+                  <figure class="slide is-active"><img src="images/waveguide_modes.png" alt="Simulated E-field and H-field patterns for the TE11, TM01, TE21, TE01, TM11, and TE31 circular waveguide modes" /><figcaption>CST mode patterns · TE11 (dominant), TM01, TE21, TE01, TM11, TE31</figcaption></figure>
+                  <figure class="slide"><img src="images/waveguide_impedance.png" alt="Simulated reference impedance versus frequency, real part" /><figcaption>Simulated port impedance vs. frequency (CST)</figcaption></figure>
+                  <figure class="slide"><img src="images/waveguide_matlab_flow.png" alt="MATLAB flow chart computing TE and TM cutoff wavenumbers and frequencies from Bessel function zeros" /><figcaption>MATLAB pipeline · Bessel zeros → k_c, f_c for TE/TM modes</figcaption></figure>
+                </div>
+                <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
+                <div class="gallery-dots"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4>Circular Waveguide Mode Analysis</h4>
+              <div class="or-block">
+                <div class="row"><span class="k">Objective</span><p class="v">Derive the TE and TM mode fields of a circular waveguide from Maxwell's equations in cylindrical coordinates, and verify the resulting cutoff-frequency and impedance predictions against full-wave simulation.</p></div>
+                <div class="row"><span class="k">Result</span><p class="v">A MATLAB pipeline solves for the Bessel-function roots that set each mode's cutoff wavenumber and frequency, confirming TE11 as the dominant (lowest-cutoff) mode ahead of TM01. A matching CST model reproduced the derived mode structure and port impedance, cross-checking the theoretical derivation against simulation.</p></div>
+              </div>
+              <div class="tools tags"><span class="tag">MATLAB</span><span class="tag">CST Studio Suite</span><span class="tag">Bessel functions</span><span class="tag">Waveguide theory</span></div>
+              <div class="foot"><span class="lead-tag">With Ariel Glick</span></div>
+            </div>
+          </article>
         </div>
 
-        <!-- ---- DOMAIN: SIGNAL & IMAGE PROCESSING / ML ---- -->
+        <!-- ---- DOMAIN: MACHINE LEARNING ---- -->
         <div class="domain">
-          <div class="domain-head"><span class="code">03 · SIGNAL &amp; IMAGE PROCESSING / ML</span><h3>Pipelines &amp; learning systems</h3><span class="line"></span></div>
+          <div class="domain-head"><span class="code">03 · MACHINE LEARNING</span><h3>Applied ML &amp; learned detection</h3><span class="line"></span></div>
 
           <article class="project" id="gaze">
             <div class="project-media">
               <div class="gallery" data-gallery>
                 <div class="slides">
-                  <figure class="slide is-active"><img src="images/gaze_trajectory.svg" alt="Sequential gaze trajectory across the display showing line-by-line reading" /><figcaption>Reconstructed gaze trajectory · line-by-line scanning</figcaption></figure>
-                  <figure class="slide"><img src="images/gaze_pipeline.svg" alt="Feature to regression to filtering pipeline diagram" /><figcaption>Pipeline · landmarks → features → XGBoost → Kalman</figcaption></figure>
+                  <figure class="slide is-active"><img src="images/gaze_trajectory.jpg" alt="Reconstructed gaze trajectory across the display during reading, coloured by reading sequence" /><figcaption>Reconstructed gaze trajectory · coloured by reading sequence</figcaption></figure>
+                  <figure class="slide"><img src="images/gaze_setup.jpg" alt="Participant reading on-screen text while a webcam captures gaze during the experiment" /><figcaption>Experiment setup · one of 187 participants, standard RGB webcam</figcaption></figure>
                 </div>
                 <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
                 <div class="gallery-dots"></div>
@@ -251,8 +279,9 @@
             <div class="project-media">
               <div class="gallery" data-gallery>
                 <div class="slides">
-                  <figure class="slide is-active"><img src="images/deepfake_spectrum.svg" alt="Colour-channel frequency spectra comparing real and fake frames" /><figcaption>Colour-channel spectra · real vs. fake (2D-DFT)</figcaption></figure>
-                  <figure class="slide"><img src="images/deepfake_accuracy.svg" alt="Classifier accuracy comparison, spectral methods versus a spatial CNN" /><figcaption>Accuracy · spectral classifiers vs. spatial CNN control</figcaption></figure>
+                  <figure class="slide is-active"><img src="images/deepfake_spectrum.png" alt="RGB channel-pair correlation distributions comparing real frames against Deepfakes and NeuralTextures forgeries" /><figcaption>Colour-channel correlation · real vs. fake (Deepfakes, NeuralTextures)</figcaption></figure>
+                  <figure class="slide"><img src="images/deepfake_accuracy.png" alt="Accuracy comparison across six classical machine-learning classifiers trained on the spectral correlation features" /><figcaption>Spectral-feature classifiers · best reaches 66.6% accuracy</figcaption></figure>
+                  <figure class="slide"><img src="images/deepfake_cnn_control.png" alt="Xception spatial CNN performance metrics: accuracy 0.808, precision 0.73, recall 0.975, F1 0.835" /><figcaption>Spatial CNN control (Xception) · 80.8% accuracy, 0.93 AUC</figcaption></figure>
                 </div>
                 <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
                 <div class="gallery-dots"></div>
@@ -261,20 +290,25 @@
             <div class="project-body">
               <h4>Frequency-Domain Deepfake Detection</h4>
               <div class="or-block">
-                <div class="row"><span class="k">Objective</span><p class="v">Test whether spectral colour-channel anomalies left by generative upsampling can separate real from fake faces — by reproducing a published method and stress-testing its claims.</p></div>
-                <div class="row"><span class="k">Result</span><p class="v">The reproduced global spectral method reached only ~65% accuracy on compressed video, while a spatial Xception CNN control hit 81% / 0.93 AUC — exposing the spectral approach's compression fragility and likely frame-level data leakage in the original claims.</p></div>
+                <div class="row"><span class="k">Objective</span><p class="v">Test whether spectral colour-channel anomalies left by generative upsampling can separate real from fake faces — by reproducing a published method's 2D-DFT / colour-correlation pipeline and stress-testing its claims.</p></div>
+                <div class="row"><span class="k">Result</span><p class="v">The reproduced spectral-correlation classifiers topped out at 66.6% accuracy on compressed (c23) video, while a spatial Xception CNN control hit 80.8% accuracy / 0.93 AUC on the same data — evidence the forensic signal survives in the spatial pixels, and that the paper's stronger reported results likely reflect compression-fragile artifacts and probable frame-level data leakage rather than a robust spectral fingerprint.</p></div>
               </div>
               <div class="tools tags"><span class="tag">Python</span><span class="tag">2D-DFT</span><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Xception CNN</span></div>
               <div class="foot"><a href="https://github.com/ROIEIHI/Freq_Deepfake_Detection">Code repository →</a></div>
             </div>
           </article>
+        </div>
+
+        <!-- ---- DOMAIN: SIGNAL & IMAGE PROCESSING ---- -->
+        <div class="domain">
+          <div class="domain-head"><span class="code">04 · SIGNAL &amp; IMAGE PROCESSING</span><h3>Classical DSP &amp; image pipelines</h3><span class="line"></span></div>
 
           <article class="project" id="dwt">
             <div class="project-media">
               <div class="gallery" data-gallery>
                 <div class="slides">
-                  <figure class="slide is-active"><img src="images/dwt_denoise.svg" alt="Noisy voltage-sag signal reconstructed by adaptive wavelet denoising" /><figcaption>Voltage-sag reconstruction via adaptive DWT thresholding</figcaption></figure>
-                  <figure class="slide"><img src="images/dwt_snr.svg" alt="Output SNR versus input SNR for the compared methods" /><figcaption>Output vs. input SNR · adaptive method vs. hard/soft</figcaption></figure>
+                  <figure class="slide is-active"><img src="images/dwt_denoise.png" alt="Voltage-sag signal reconstructed by the reproduced adaptive DWT thresholding method" /><figcaption>Voltage-sag reconstruction via the reproduced adaptive DWT method</figcaption></figure>
+                  <figure class="slide"><img src="images/dwt_snr.png" alt="Output SNR versus input SNR for the adaptive method against hard and soft thresholding" /><figcaption>Output vs. input SNR · adaptive method vs. hard/soft</figcaption></figure>
                 </div>
                 <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
                 <div class="gallery-dots"></div>
@@ -283,30 +317,33 @@
             <div class="project-body">
               <h4>Adaptive Wavelet Denoising of Power-Quality Signals</h4>
               <div class="or-block">
-                <div class="row"><span class="k">Objective</span><p class="v">Preserve the sharp transient edges of a voltage sag while removing additive noise, where a single global wavelet threshold either over-smooths the event or leaves noise behind.</p></div>
-                <div class="row"><span class="k">Result</span><p class="v">An energy-optimized, scale-adaptive scheme — per-level thresholds from a Peak-to-Sum Ratio plus critical-scale selection — reconstructed the sag and located its start/end via modulus maxima, benchmarked against hard and soft thresholding across the SNR range in MATLAB.</p></div>
+                <div class="row"><span class="k">Objective</span><p class="v">Reproduce and critically evaluate a published energy-optimized, scale-adaptive wavelet thresholding method (Goh et al.) for preserving the sharp transient edges of a voltage sag while removing AWGN — a case where a single global threshold either over-smooths the event or leaves noise behind.</p></div>
+                <div class="row"><span class="k">Result</span><p class="v">A MATLAB pipeline reproducing the method's Peak-to-Sum-Ratio thresholds, critical-scale selection, and |D1| modulus-maxima edge detection benchmarked it against hard and soft thresholding across a 0–35 dB input-SNR sweep. The adaptive method was consistently competitive to best, but its margin over the simple baselines was narrow — a practical limitation the original paper understates.</p></div>
               </div>
               <div class="tools tags"><span class="tag">MATLAB</span><span class="tag">Wavelets (DWT)</span><span class="tag">Modulus maxima</span><span class="tag">Signal processing</span></div>
-              <div class="foot"><a href="assets/dwt-report.pdf">Full report (PDF) →</a></div>
+              <div class="foot"><span class="lead-tag">Paper reproduction</span></div>
             </div>
           </article>
 
-          <article class="project reverse" id="dlcv">
+          <article class="project reverse" id="lowlight">
             <div class="project-media">
               <div class="gallery" data-gallery>
                 <div class="slides">
-                  <figure class="slide is-active"><img src="images/dlcv_project.svg" alt="Deep-learning computer vision project placeholder" /><figcaption>Deep-learning computer-vision project · add your figure</figcaption></figure>
+                  <figure class="slide is-active"><img src="images/lowlight_forest.jpg" alt="Original dark forest scene next to JND-SNRF and Double-Function Retinex enhanced versions, with entropy, contrast, PSNR and LOE annotated" /><figcaption>Original vs. JND-SNRF vs. Double-Function Retinex enhancement</figcaption></figure>
+                  <figure class="slide"><img src="images/lowlight_room.jpg" alt="Original dark indoor scene next to JND-SNRF and Double-Function Retinex enhanced versions, with entropy, contrast, PSNR and LOE annotated" /><figcaption>Second test scene · same two algorithms, same metrics</figcaption></figure>
                 </div>
+                <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
+                <div class="gallery-dots"></div>
               </div>
             </div>
             <div class="project-body">
-              <h4>Deep-Learning Computer Vision</h4>
+              <h4>Low-Illumination Image Enhancement: Retinex vs. Nonlinear Mapping</h4>
               <div class="or-block">
-                <div class="row"><span class="k">Objective</span><p class="v">Final project for a deep-learning computer-vision course. <em>Add a one-line objective here.</em></p></div>
-                <div class="row"><span class="k">Result</span><p class="v"><em>Summarize the model, dataset, and key metric once you fill this in — this is the one project I didn't have full details for.</em></p></div>
+                <div class="row"><span class="k">Objective</span><p class="v">Reproduce and benchmark two published low-light / nonuniform-illumination enhancement algorithms — a dual-branch (log + tanh) Retinex method and a JND/Naka-Rushton-based nonlinear tone-mapping method (SNRF) — on real non-uniformly lit photos.</p></div>
+                <div class="row"><span class="k">Result</span><p class="v">Both algorithms were reimplemented in MATLAB and scored with Entropy, RMS contrast, PSNR, and Lightness-Order-Error (LOE) against the originals. Across test scenes, the Retinex method consistently gained more entropy (more recovered detail) but at a larger tonal deviation (lower PSNR, higher LOE), while the JND-SNRF method made a more conservative, order-preserving correction — a clear detail-vs-fidelity trade-off between the two published approaches.</p></div>
               </div>
-              <div class="tools tags"><span class="tag">Python</span><span class="tag">Deep learning</span><span class="tag">CNNs</span></div>
-              <div class="foot"><a href="#">Notebook / repository →</a></div>
+              <div class="tools tags"><span class="tag">MATLAB</span><span class="tag">Retinex theory</span><span class="tag">JND / Naka-Rushton</span><span class="tag">Image quality metrics</span></div>
+              <div class="foot"><span class="lead-tag">With Gal · paper reproduction</span></div>
             </div>
           </article>
         </div>
@@ -320,8 +357,9 @@
         <p class="eyebrow">Get in touch</p>
         <h2>Open to roles in photonics, RF, and applied ML.</h2>
         <div class="contact-links">
-          <div class="item"><span class="k">Email</span><a href="mailto:your.email@example.com">your.email@example.com</a></div>
-          <div class="item"><span class="k">LinkedIn</span><a href="#">linkedin.com/in/your-handle</a></div>
+          <div class="item"><span class="k">Email</span><a href="mailto:Roie12ihia@gmail.com">Roie12ihia@gmail.com</a></div>
+          <div class="item"><span class="k">Phone</span><a href="tel:+972502233012">+972 50-223-3012</a></div>
+          <div class="item"><span class="k">LinkedIn</span><a href="https://www.linkedin.com/in/roie-ihia-368415227">linkedin.com/in/roie-ihia</a></div>
           <div class="item"><span class="k">GitHub</span><a href="https://github.com/ROIEIHI">github.com/ROIEIHI</a></div>
           <div class="item"><span class="k">Résumé</span><a href="assets/Resume-Roie-Ihia.pdf">Download PDF</a></div>
         </div>
