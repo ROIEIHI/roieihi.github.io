@@ -22,15 +22,6 @@
     });
   }
 
-  /* ---- precise hero trace length for the draw animation ---- */
-  var trace = document.querySelector(".trace-path.animate");
-  if (trace && typeof trace.getTotalLength === "function") {
-    try {
-      var len = Math.ceil(trace.getTotalLength());
-      trace.style.setProperty("--len", len);
-    } catch (e) { /* keep the inline fallback length */ }
-  }
-
   /* ---- figure galleries ---- */
   document.querySelectorAll("[data-gallery]").forEach(function (gal) {
     var slides = Array.prototype.slice.call(gal.querySelectorAll(".slide"));
@@ -62,7 +53,7 @@
 
   /* ---- scroll reveal ---- */
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var targets = document.querySelectorAll(".pub, .project, .about-grid, .stats");
+  var targets = document.querySelectorAll(".pub, .project, .about-grid");
   targets.forEach(function (t) { t.classList.add("reveal"); });
 
   if (reduce || !("IntersectionObserver" in window)) {

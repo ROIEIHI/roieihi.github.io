@@ -132,20 +132,14 @@ img { max-width: 100%; display: block; }
 .nav-toggle span::after { position: absolute; top: 6px; }
 
 /* =========================================================================
-   Hero
+   About (incl. intro header — name + CTAs, formerly the hero)
    ========================================================================= */
-.hero { position: relative; z-index: 1; padding-block: clamp(3rem, 9vw, 6.5rem) clamp(2.5rem,6vw,4rem); overflow: hidden; }
-.hero-grid {
-  display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(1.5rem, 4vw, 3rem);
-  align-items: center;
-}
-.hero h1 {
+.intro-head { margin-bottom: clamp(2.2rem, 5vw, 3.2rem); }
+.intro-head h1 {
   font-family: var(--font-display); font-weight: 700;
   font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.02; letter-spacing: -0.03em;
-  margin: .4rem 0 1.1rem;
+  margin: 0 0 1.3rem;
 }
-.hero h1 .accent { color: var(--accent-ink); }
-.hero .lead { font-size: clamp(1.02rem, 1.6vw, 1.18rem); color: var(--ink-2); max-width: 46ch; margin: 0 0 1.8rem; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: .7rem; }
 
 .btn {
@@ -158,45 +152,6 @@ img { max-width: 100%; display: block; }
 .btn-primary:hover { background: #14293d; }
 .btn-ghost { background: transparent; color: var(--ink); }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent-ink); }
-
-/* hero readout panel with animated trace */
-.readout {
-  position: relative; background: var(--surface); border: 1px solid var(--line);
-  border-radius: 14px; box-shadow: var(--shadow); padding: 1rem 1rem .5rem;
-}
-.readout-head {
-  display: flex; justify-content: space-between; align-items: center;
-  font-family: var(--font-mono); font-size: .74rem; color: var(--muted);
-  letter-spacing: .06em; padding: .1rem .3rem .6rem;
-}
-.readout svg { width: 100%; height: auto; display: block; }
-.trace-path { fill: none; stroke: var(--accent); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
-.trace-fill { fill: url(#heroFill); opacity: .5; }
-.marker-dot { fill: var(--accent); }
-.marker-label { font-family: var(--font-mono); font-size: 13px; fill: var(--ink); }
-.grat { stroke: var(--line); stroke-width: 1; }
-.axis { stroke: var(--ink); stroke-width: 1.3; }
-.axis-label { font-family: var(--font-mono); font-size: 12px; fill: var(--muted); }
-
-/* draw-on animation */
-@media (prefers-reduced-motion: no-preference) {
-  .trace-path.animate {
-    stroke-dasharray: var(--len); stroke-dashoffset: var(--len);
-    animation: draw 1.5s cubic-bezier(.6,.02,.2,1) forwards;
-  }
-  .marker-dot.animate, .marker-label.animate { opacity: 0; animation: fadein .5s ease 1.35s forwards; }
-  @keyframes draw { to { stroke-dashoffset: 0; } }
-  @keyframes fadein { to { opacity: 1; } }
-}
-
-/* small stat strip under hero */
-.stats { display: flex; flex-wrap: wrap; gap: 2.2rem; margin-top: 2.4rem; padding-top: 1.6rem; border-top: 1px solid var(--line); }
-.stat .num { font-family: var(--font-display); font-weight: 700; font-size: 1.55rem; color: var(--ink); letter-spacing: -.02em; }
-.stat .lab { font-family: var(--font-mono); font-size: .72rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
-
-/* =========================================================================
-   About
-   ========================================================================= */
 .about-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: clamp(1.5rem,4vw,3.5rem); align-items: start; }
 .about-grid p { margin-top: 0; color: var(--ink-2); }
 .intro-row { display: flex; gap: 1.5rem; align-items: flex-start; }
@@ -250,18 +205,15 @@ img { max-width: 100%; display: block; }
 .project {
   background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
   overflow: hidden; box-shadow: var(--shadow); margin-bottom: 1.5rem;
-  display: grid; grid-template-columns: 1.15fr 1fr;
+  display: flex; flex-direction: column;
 }
-.project.reverse { grid-template-columns: 1fr 1.15fr; }
-.project.reverse .project-media { order: 2; }
 
-.project-media { position: relative; background: var(--paper); border-inline-end: 1px solid var(--line); }
-.project.reverse .project-media { border-inline-end: none; border-inline-start: 1px solid var(--line); }
+.project-media { order: 2; position: relative; background: var(--paper); border-top: 1px solid var(--line); }
 .gallery { position: relative; }
 .gallery figure { margin: 0; }
 .gallery .slide { display: none; }
 .gallery .slide.is-active { display: block; }
-.gallery .slide img { width: 100%; height: 100%; object-fit: contain; }
+.gallery .slide img { width: 100%; height: clamp(280px, 36vw, 440px); object-fit: contain; }
 .gallery figcaption {
   font-family: var(--font-mono); font-size: .74rem; color: var(--muted);
   padding: .55rem .9rem; border-top: 1px solid var(--line); background: var(--surface);
@@ -277,7 +229,7 @@ img { max-width: 100%; display: block; }
 .gallery-dots button { width: 7px; height: 7px; border-radius: 50%; border: none; background: var(--line); cursor: pointer; padding: 0; }
 .gallery-dots button.is-active { background: var(--accent); }
 
-.project-body { padding: clamp(1.3rem, 2.5vw, 2rem); display: flex; flex-direction: column; }
+.project-body { order: 1; padding: clamp(1.3rem, 2.5vw, 2rem); display: flex; flex-direction: column; }
 .project-body h4 { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; margin: 0 0 .9rem; letter-spacing: -.02em; line-height: 1.15; }
 .or-block { display: grid; gap: .7rem; margin-bottom: 1.1rem; }
 .or-block .row { display: grid; grid-template-columns: 5.5rem 1fr; gap: .8rem; align-items: baseline; }
@@ -310,13 +262,7 @@ img { max-width: 100%; display: block; }
    Responsive
    ========================================================================= */
 @media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .readout { order: -1; }
   .about-grid { grid-template-columns: 1fr; }
-  .project, .project.reverse { grid-template-columns: 1fr; }
-  .project.reverse .project-media { order: 0; }
-  .project-media { border-inline-end: none; border-bottom: 1px solid var(--line); }
-  .project.reverse .project-media { border-inline-start: none; }
 }
 @media (max-width: 640px) {
   body { font-size: 16px; }

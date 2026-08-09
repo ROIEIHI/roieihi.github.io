@@ -30,63 +30,16 @@
 
   <main id="top">
 
-    <!-- ===================== HERO ===================== -->
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Electro-Optics M.Sc. Student · Optical Simulation &amp; ML</p>
+    <!-- ===================== ABOUT (incl. intro) ===================== -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="intro-head">
           <h1>Roie&nbsp;Ihia</h1>
-          <p class="lead">I simulate and validate <span style="color:var(--accent-ink)">optical and RF systems</span>, coupling multi-physics solvers to machine-learning pipelines that bridge simulated and measured data — from first-author Bayesian optimization to CPU-only computer vision.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="#projects">View projects</a>
             <a class="btn btn-ghost" href="#publications">Read publications</a>
           </div>
-
-          <div class="stats">
-            <div class="stat"><div class="num">2</div><div class="lab">Research manuscripts</div></div>
-            <div class="stat"><div class="num">0.649&nbsp;V·mm</div><div class="lab">Modulator efficiency · first author</div></div>
-            <div class="stat"><div class="num">3.6°</div><div class="lab">Webcam gaze accuracy</div></div>
-          </div>
         </div>
-
-        <!-- Signature: swept frequency-response readout -->
-        <figure class="readout" aria-label="Frequency-response trace: antenna S11 with resonance at 915 MHz">
-          <figcaption class="readout-head"><span>S11 · PIFA @ 915&nbsp;MHz</span><span>HFSS · dB</span></figcaption>
-          <svg viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <defs>
-              <linearGradient id="heroFill" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#0E8C82" stop-opacity="0.18"/>
-                <stop offset="1" stop-color="#0E8C82" stop-opacity="0"/>
-              </linearGradient>
-            </defs>
-            <!-- graticule -->
-            <g class="grat">
-              <line x1="140" y1="40" x2="140" y2="320"/><line x1="240" y1="40" x2="240" y2="320"/>
-              <line x1="340" y1="40" x2="340" y2="320"/><line x1="440" y1="40" x2="440" y2="320"/>
-              <line x1="40" y1="131" x2="540" y2="131"/><line x1="40" y1="184" x2="540" y2="184"/>
-              <line x1="40" y1="237" x2="540" y2="237"/>
-            </g>
-            <!-- axes -->
-            <line class="axis" x1="40" y1="40" x2="40" y2="320"/>
-            <line class="axis" x1="40" y1="320" x2="540" y2="320"/>
-            <text class="axis-label" x="140" y="338" text-anchor="middle">0.75</text>
-            <text class="axis-label" x="310" y="338" text-anchor="middle">0.92</text>
-            <text class="axis-label" x="480" y="338" text-anchor="middle">1.25</text>
-            <text class="axis-label" x="510" y="352" text-anchor="middle">GHz</text>
-            <!-- trace fill + line -->
-            <path class="trace-fill" d="M 40 320 L 40.0 78.0 L 120 78.0 L 160.0 78.9 L 200.0 89.0 L 230 121.7 L 255 177.3 L 280.0 246.0 L 300.0 284.8 L 310.0 291.8 L 320.0 288.8 L 340.0 255.8 L 365 188.2 L 395 120.0 L 425 88.5 L 460.0 79.2 L 505 78.0 L 540 78.0 L 540 320 Z"/>
-            <path class="trace-path animate" style="--len:754" d="M 40 78 L 120 78 L 150 78.4 L 175 80.5 L 200 89 L 220 107 L 240 140.9 L 260 191 L 280 246 L 295 277.9 L 305 289.5 L 310 291.8 L 316 291 L 325 283.6 L 340 255.8 L 360 202.2 L 380 149.8 L 400 112.3 L 420 91.6 L 445 81.3 L 470 78.6 L 505 78 L 540 78"/>
-            <!-- marker -->
-            <circle class="marker-dot animate" cx="310" cy="291.8" r="5"/>
-            <text class="marker-label animate" x="298" y="282" text-anchor="end">m1  915 MHz</text>
-          </svg>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ===================== ABOUT ===================== -->
-    <section class="section" id="about">
-      <div class="wrap">
         <svg class="rule" viewBox="0 0 1120 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 9 H72 C92 9 97 21 112 21 C127 21 132 9 152 9 H1120" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="112" cy="21" r="3.5" fill="var(--accent)"/></svg>
         <p class="eyebrow">About</p>
         <h2 class="section-title">Device physics, met with data.</h2>
@@ -96,9 +49,9 @@
               <img class="profile-photo" src="images/profile.jpg" alt="Portrait of Roie Ihia" />
               <div>
                 <p>I'm an M.Sc. student in Electro-Optics (Direct Track, cumulative average 97, expected Aug 2027) and a 4th-year B.Sc. student in Signal Processing &amp; Communication (average 92.5, expected Aug 2026) at the Holon Institute of Technology (HIT), focused on the simulation and validation of optical systems. My research centers on ML-driven optical-device simulation: a first-author Bayesian-optimization pipeline coupled to Lumerical multi-physics solvers, and a co-authored real-world optical-sensor data-acquisition study validated across 187 participants.</p>
+                <p>I build automated Python/MATLAB simulation and data-acquisition environments that bridge simulated and measured data. That range shows up across my projects — a body-worn antenna simulated in HFSS, a circular-waveguide mode analysis, and critical reproductions of a deepfake detector, a wavelet-denoising method, and a low-light image-enhancement method that tested where each published claim holds up. I care as much about honest evaluation as about a clean result.</p>
               </div>
             </div>
-            <p>I build automated Python/MATLAB simulation and data-acquisition environments that bridge simulated and measured data. That range shows up across my projects — a body-worn antenna simulated in HFSS, a circular-waveguide mode analysis, and critical reproductions of a deepfake detector, a wavelet-denoising method, and a low-light image-enhancement method that tested where each published claim holds up. I care as much about honest evaluation as about a clean result.</p>
           </div>
           <div class="skills">
             <div class="group">
@@ -173,24 +126,29 @@
 
         <!-- ---- DOMAIN: PHOTONICS ---- -->
         <div class="domain">
-          <div class="domain-head"><span class="code">01 · PHOTONICS &amp; DEVICES</span><h3>Silicon-photonic device design</h3><span class="line"></span></div>
+          <div class="domain-head"><span class="code">01 · ELECTRO-OPTICS</span><h3>Silicon-photonic device design</h3><span class="line"></span></div>
 
           <article class="project" id="pin">
             <div class="project-media">
               <div class="gallery" data-gallery>
                 <div class="slides">
-                  <figure class="slide is-active"><img src="images/pin_efficiency_loss.png" alt="Modulation efficiency versus optical loss, with the located optimum marked" /><figcaption>Efficiency–loss landscape · located optimum inside the target region</figcaption></figure>
+                  <figure class="slide is-active"><img src="images/pin_device_schematic.png" alt="Schematic cross-section of the forward-biased PIN rib waveguide defining the geometric and doping parameters in the optimizer's search space" /><figcaption>Device cross-section · rib width, slab height, doping, offset spacing &amp; length span the search space</figcaption></figure>
+                  <figure class="slide"><img src="images/pin_workflow.png" alt="Closed-loop workflow diagram coupling the Python Bayesian optimization controller to Lumerical CHARGE and FDE multi-physics solvers" /><figcaption>Closed-loop workflow · LHS initialization, then Gaussian-process-guided search over 150 simulations</figcaption></figure>
+                  <figure class="slide"><img src="images/pin_efficiency_loss.png" alt="Modulation efficiency versus optical loss, with the located optimum marked" /><figcaption>Efficiency–loss landscape · located optimum inside the target region</figcaption></figure>
                   <figure class="slide"><img src="images/pin_convergence.png" alt="Best-found cost versus iteration on a log scale" /><figcaption>Cost convergence · surrogate activates after the blind sampling phase</figcaption></figure>
+                  <figure class="slide"><img src="images/pin_equalizer_bandwidth.png" alt="Simulated electro-optic magnitude response comparing the raw device at 6.25 gigahertz bandwidth to the equalized system at 24.9 gigahertz" /><figcaption>RC-equalizer response · 6.25 → 24.9 GHz via zero-pole cancellation</figcaption></figure>
+                  <figure class="slide"><img src="images/pin_eye_diagrams.png" alt="Time-domain eye diagrams at 25 gigabits per second comparing the raw device to the device with the passive RC equalizer" /><figcaption>25 Gbps eye diagrams · raw device (Q = 5.45) vs. equalized (Q = 12.66)</figcaption></figure>
                 </div>
                 <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
                 <div class="gallery-dots"></div>
               </div>
             </div>
             <div class="project-body">
-              <h4>Bayesian Optimization of a PIN Phase Shifter</h4>
+              <h4>Sample-Efficient Optimization of a Forward-Bias PIN Electro-Optic Phase Shifter with RC-Equalizer for Datacom Applications</h4>
               <div class="or-block">
                 <div class="row"><span class="k">Objective</span><p class="v">Co-optimize a forward-bias PIN modulator's competing metrics — modulation efficiency and optical loss — which the plasma-dispersion effect couples into a nonlinear trade-off that one-factor sweeps cannot solve.</p></div>
-                <div class="row"><span class="k">Result</span><p class="v">A Gaussian-process surrogate driving Lumerical multi-physics located a valid design in 150 simulations, raising the valid-design rate from 22% to 80% and reaching V<sub>π</sub>L = 0.649 V·mm at 15.2 dB/cm. A passive RC equalizer then extended bandwidth from 6.25 to 24.9 GHz for 25 Gbps.</p></div>
+                <div class="row"><span class="k">Result</span><p class="v">A Gaussian-process surrogate driving Lumerical multi-physics located a valid design in 150 simulations, raising the valid-design rate from 22% to 80% and reaching V<sub>π</sub>L = 0.649 V·mm at 15.2 dB/cm, holding within ±0.26% efficiency and ±4.5% loss across the full O-band.</p></div>
+                <div class="row"><span class="k">Bandwidth</span><p class="v">The device's extracted small-signal parameters (C<sub>F</sub> = 0.347 pF, R<sub>F</sub> = 10.55 kΩ) set an intrinsic 6.25 GHz bandwidth; a passive RC equalizer sized by zero-pole cancellation pushed that to 24.9 GHz for 25 Gbps operation, raising the eye's Q-factor from 5.45 to 12.66.</p></div>
               </div>
               <div class="tools tags"><span class="tag">Python</span><span class="tag">Bayesian optimization</span><span class="tag">Gaussian process</span><span class="tag">Lumerical CHARGE/FDE</span><span class="tag">MATLAB</span></div>
               <div class="foot"><span class="lead-tag">First-author paper</span><a href="https://github.com/ilaish5/PIN_Opt">Code repository →</a></div>
@@ -198,9 +156,108 @@
           </article>
         </div>
 
-        <!-- ---- DOMAIN: RF & ANTENNAS ---- -->
+        <!-- ---- DOMAIN: APPLIED ML & IMAGE PROCESSING ---- -->
         <div class="domain">
-          <div class="domain-head"><span class="code">02 · RF &amp; ANTENNAS</span><h3>Antenna &amp; microwave design</h3><span class="line"></span></div>
+          <div class="domain-head"><span class="code">02 · APPLIED ML &amp; IMAGE PROCESSING</span><h3>Learned detection, gaze tracking &amp; classical signal pipelines</h3><span class="line"></span></div>
+
+          <article class="project" id="gaze">
+            <div class="project-media">
+              <div class="gallery" data-gallery>
+                <div class="slides">
+                  <figure class="slide is-active"><img src="images/gaze_calibration_ui.png" alt="Live calibration screen from the gaze tracking system showing MediaPipe Face Mesh landmarks and the bounding box used for head alignment" /><figcaption>Live calibration UI · MediaPipe Face Mesh landmarks with head-alignment bounding box</figcaption></figure>
+                  <figure class="slide"><img src="images/gaze_pipeline.png" alt="Real-time inference pipeline from webcam frames through landmark detection, XGBoost gaze prediction, adaptive Kalman filtering, and fixation and word mapping to reading metrics" /><figcaption>Real-time pipeline · webcam → XGBoost gaze prediction → adaptive Kalman → reading metrics</figcaption></figure>
+                  <figure class="slide"><img src="images/gaze_trajectory.jpg" alt="Reconstructed gaze trajectory across the display during reading, coloured by reading sequence" /><figcaption>Reconstructed gaze trajectory · coloured by reading sequence</figcaption></figure>
+                  <figure class="slide"><img src="images/gaze_setup.jpg" alt="Participant reading on-screen text while a webcam captures gaze during the experiment" /><figcaption>Experiment setup · one of 187 participants, standard RGB webcam</figcaption></figure>
+                  <figure class="slide"><img src="images/gaze_burst_optimization.png" alt="Prediction error and overfitting score versus number of captured frames per calibration point, showing an optimum near 11 frames" /><figcaption>Calibration-burst tuning · error vs. overfitting trade-off, optimum near 11 frames/point</figcaption></figure>
+                  <figure class="slide"><img src="images/gaze_fixation_histogram.png" alt="Histogram of fixation durations during a continuous reading session, with mean 357 milliseconds and median 278 milliseconds" /><figcaption>Fixation-duration distribution · mean 357 ms, consistent with natural reading physiology</figcaption></figure>
+                </div>
+                <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
+                <div class="gallery-dots"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4>A Lightweight RGB Webcam-Based Gaze Tracking System for Real-World Reading Analysis</h4>
+              <div class="or-block">
+                <div class="row"><span class="k">Objective</span><p class="v">Turn a standard RGB webcam into a reading-behavior analyzer with no infrared hardware, GPU, or head stabilization — overcoming webcam jitter and the weak vertical-gaze signal.</p></div>
+                <div class="row"><span class="k">Result</span><p class="v">A CPU-only pipeline — MediaPipe landmarks, engineered cross-term features, a multi-output XGBoost regressor, and a velocity-adaptive Kalman filter — reached 3.6° mean angular error across 187 participants, with reading metrics in the physiological range.</p></div>
+                <div class="row"><span class="k">Validation</span><p class="v">A 30-point calibration with an 11-frame burst per target — tuned to minimize the error/overfitting trade-off — trains the per-session regressor; the resulting fixation durations (mean 357 ms) and ~75 WPM reading speed land inside established physiological ranges.</p></div>
+              </div>
+              <div class="tools tags"><span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">Kalman filter</span><span class="tag">MediaPipe</span><span class="tag">OpenCV</span></div>
+              <div class="foot"><span class="lead-tag">Co-author paper</span><a href="https://github.com/ROIEIHI/gaze_tracking_system">Code repository →</a></div>
+            </div>
+          </article>
+
+          <article class="project reverse" id="deepfake">
+            <div class="project-media">
+              <div class="gallery" data-gallery>
+                <div class="slides">
+                  <figure class="slide is-active"><img src="images/deepfake_spectrum.png" alt="RGB channel-pair correlation distributions comparing real frames against Deepfakes and NeuralTextures forgeries" /><figcaption>Colour-channel correlation · real vs. fake (Deepfakes, NeuralTextures)</figcaption></figure>
+                  <figure class="slide"><img src="images/deepfake_accuracy.png" alt="Accuracy comparison across six classical machine-learning classifiers trained on the spectral correlation features" /><figcaption>Spectral-feature classifiers · best reaches 66.6% accuracy</figcaption></figure>
+                  <figure class="slide"><img src="images/deepfake_cnn_control.png" alt="Xception spatial CNN performance metrics: accuracy 0.808, precision 0.73, recall 0.975, F1 0.835" /><figcaption>Spatial CNN control (Xception) · 80.8% accuracy, 0.93 AUC</figcaption></figure>
+                </div>
+                <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
+                <div class="gallery-dots"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4>Exposing Deepfakes Through Spectral Anomalies in Colour Channels</h4>
+              <div class="or-block">
+                <div class="row"><span class="k">Objective</span><p class="v">Test whether spectral colour-channel anomalies left by generative upsampling can separate real from fake faces — by reproducing a published method's 2D-DFT / colour-correlation pipeline and stress-testing its claims.</p></div>
+                <div class="row"><span class="k">Result</span><p class="v">The reproduced spectral-correlation classifiers topped out at 66.6% accuracy on compressed (c23) video, while a spatial Xception CNN control hit 80.8% accuracy / 0.93 AUC on the same data — evidence the forensic signal survives in the spatial pixels, and that the paper's stronger reported results likely reflect compression-fragile artifacts and probable frame-level data leakage rather than a robust spectral fingerprint.</p></div>
+              </div>
+              <div class="tools tags"><span class="tag">Python</span><span class="tag">2D-DFT</span><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Xception CNN</span></div>
+              <div class="foot"><a href="https://github.com/ROIEIHI/Freq_Deepfake_Detection">Code repository →</a></div>
+            </div>
+          </article>
+
+          <article class="project" id="dwt">
+            <div class="project-media">
+              <div class="gallery" data-gallery>
+                <div class="slides">
+                  <figure class="slide is-active"><img src="images/dwt_denoise.png" alt="Voltage-sag signal reconstructed by the reproduced adaptive DWT thresholding method" /><figcaption>Voltage-sag reconstruction via the reproduced adaptive DWT method</figcaption></figure>
+                  <figure class="slide"><img src="images/dwt_snr.png" alt="Output SNR versus input SNR for the adaptive method against hard and soft thresholding" /><figcaption>Output vs. input SNR · adaptive method vs. hard/soft</figcaption></figure>
+                </div>
+                <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
+                <div class="gallery-dots"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4>Denoising Transient Power Quality Disturbances Using an Improved Adaptive Wavelet Threshold Method</h4>
+              <div class="or-block">
+                <div class="row"><span class="k">Objective</span><p class="v">Reproduce and critically evaluate a published energy-optimized, scale-adaptive wavelet thresholding method (Goh et al.) for preserving the sharp transient edges of a voltage sag while removing AWGN — a case where a single global threshold either over-smooths the event or leaves noise behind.</p></div>
+                <div class="row"><span class="k">Result</span><p class="v">A MATLAB pipeline reproducing the method's Peak-to-Sum-Ratio thresholds, critical-scale selection, and |D1| modulus-maxima edge detection benchmarked it against hard and soft thresholding across a 0–35 dB input-SNR sweep. The adaptive method was consistently competitive to best, but its margin over the simple baselines was narrow — a practical limitation the original paper understates.</p></div>
+              </div>
+              <div class="tools tags"><span class="tag">MATLAB</span><span class="tag">Wavelets (DWT)</span><span class="tag">Modulus maxima</span><span class="tag">Signal processing</span></div>
+              <div class="foot"><span class="lead-tag">Paper reproduction</span></div>
+            </div>
+          </article>
+
+          <article class="project reverse" id="lowlight">
+            <div class="project-media">
+              <div class="gallery" data-gallery>
+                <div class="slides">
+                  <figure class="slide is-active"><img src="images/lowlight_forest.jpg" alt="Original dark forest scene next to JND-SNRF and Double-Function Retinex enhanced versions, with entropy, contrast, PSNR and LOE annotated" /><figcaption>Original vs. JND-SNRF vs. Double-Function Retinex enhancement</figcaption></figure>
+                  <figure class="slide"><img src="images/lowlight_room.jpg" alt="Original dark indoor scene next to JND-SNRF and Double-Function Retinex enhanced versions, with entropy, contrast, PSNR and LOE annotated" /><figcaption>Second test scene · same two algorithms, same metrics</figcaption></figure>
+                </div>
+                <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
+                <div class="gallery-dots"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4>Low-Illumination Image Enhancement: Retinex vs. Nonlinear Mapping</h4>
+              <div class="or-block">
+                <div class="row"><span class="k">Objective</span><p class="v">Reproduce and benchmark two published low-light / nonuniform-illumination enhancement algorithms — a dual-branch (log + tanh) Retinex method and a JND/Naka-Rushton-based nonlinear tone-mapping method (SNRF) — on real non-uniformly lit photos.</p></div>
+                <div class="row"><span class="k">Result</span><p class="v">Both algorithms were reimplemented in MATLAB and scored with Entropy, RMS contrast, PSNR, and Lightness-Order-Error (LOE) against the originals. Across test scenes, the Retinex method consistently gained more entropy (more recovered detail) but at a larger tonal deviation (lower PSNR, higher LOE), while the JND-SNRF method made a more conservative, order-preserving correction — a clear detail-vs-fidelity trade-off between the two published approaches.</p></div>
+              </div>
+              <div class="tools tags"><span class="tag">MATLAB</span><span class="tag">Retinex theory</span><span class="tag">JND / Naka-Rushton</span><span class="tag">Image quality metrics</span></div>
+              <div class="foot"><span class="lead-tag">With Gal · paper reproduction</span></div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ---- DOMAIN: MICROWAVE & ANTENNAS ---- -->
+        <div class="domain">
+          <div class="domain-head"><span class="code">03 · MICROWAVE &amp; ANTENNAS</span><h3>Antenna &amp; microwave design</h3><span class="line"></span></div>
 
           <article class="project reverse" id="antenna">
             <div class="project-media">
@@ -245,105 +302,6 @@
               </div>
               <div class="tools tags"><span class="tag">MATLAB</span><span class="tag">CST Studio Suite</span><span class="tag">Bessel functions</span><span class="tag">Waveguide theory</span></div>
               <div class="foot"><span class="lead-tag">With Ariel Glick</span></div>
-            </div>
-          </article>
-        </div>
-
-        <!-- ---- DOMAIN: MACHINE LEARNING ---- -->
-        <div class="domain">
-          <div class="domain-head"><span class="code">03 · MACHINE LEARNING</span><h3>Applied ML &amp; learned detection</h3><span class="line"></span></div>
-
-          <article class="project" id="gaze">
-            <div class="project-media">
-              <div class="gallery" data-gallery>
-                <div class="slides">
-                  <figure class="slide is-active"><img src="images/gaze_trajectory.jpg" alt="Reconstructed gaze trajectory across the display during reading, coloured by reading sequence" /><figcaption>Reconstructed gaze trajectory · coloured by reading sequence</figcaption></figure>
-                  <figure class="slide"><img src="images/gaze_setup.jpg" alt="Participant reading on-screen text while a webcam captures gaze during the experiment" /><figcaption>Experiment setup · one of 187 participants, standard RGB webcam</figcaption></figure>
-                </div>
-                <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
-                <div class="gallery-dots"></div>
-              </div>
-            </div>
-            <div class="project-body">
-              <h4>Webcam Gaze Tracking for Reading Analysis</h4>
-              <div class="or-block">
-                <div class="row"><span class="k">Objective</span><p class="v">Turn a standard RGB webcam into a reading-behavior analyzer with no infrared hardware, GPU, or head stabilization — overcoming webcam jitter and the weak vertical-gaze signal.</p></div>
-                <div class="row"><span class="k">Result</span><p class="v">A CPU-only pipeline — MediaPipe landmarks, engineered cross-term features, a multi-output XGBoost regressor, and a velocity-adaptive Kalman filter — reached 3.6° mean angular error across 187 participants, with reading metrics in the physiological range.</p></div>
-              </div>
-              <div class="tools tags"><span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">Kalman filter</span><span class="tag">MediaPipe</span><span class="tag">OpenCV</span></div>
-              <div class="foot"><span class="lead-tag">Co-author paper</span><a href="https://github.com/ROIEIHI/gaze_tracking_system">Code repository →</a></div>
-            </div>
-          </article>
-
-          <article class="project reverse" id="deepfake">
-            <div class="project-media">
-              <div class="gallery" data-gallery>
-                <div class="slides">
-                  <figure class="slide is-active"><img src="images/deepfake_spectrum.png" alt="RGB channel-pair correlation distributions comparing real frames against Deepfakes and NeuralTextures forgeries" /><figcaption>Colour-channel correlation · real vs. fake (Deepfakes, NeuralTextures)</figcaption></figure>
-                  <figure class="slide"><img src="images/deepfake_accuracy.png" alt="Accuracy comparison across six classical machine-learning classifiers trained on the spectral correlation features" /><figcaption>Spectral-feature classifiers · best reaches 66.6% accuracy</figcaption></figure>
-                  <figure class="slide"><img src="images/deepfake_cnn_control.png" alt="Xception spatial CNN performance metrics: accuracy 0.808, precision 0.73, recall 0.975, F1 0.835" /><figcaption>Spatial CNN control (Xception) · 80.8% accuracy, 0.93 AUC</figcaption></figure>
-                </div>
-                <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
-                <div class="gallery-dots"></div>
-              </div>
-            </div>
-            <div class="project-body">
-              <h4>Frequency-Domain Deepfake Detection</h4>
-              <div class="or-block">
-                <div class="row"><span class="k">Objective</span><p class="v">Test whether spectral colour-channel anomalies left by generative upsampling can separate real from fake faces — by reproducing a published method's 2D-DFT / colour-correlation pipeline and stress-testing its claims.</p></div>
-                <div class="row"><span class="k">Result</span><p class="v">The reproduced spectral-correlation classifiers topped out at 66.6% accuracy on compressed (c23) video, while a spatial Xception CNN control hit 80.8% accuracy / 0.93 AUC on the same data — evidence the forensic signal survives in the spatial pixels, and that the paper's stronger reported results likely reflect compression-fragile artifacts and probable frame-level data leakage rather than a robust spectral fingerprint.</p></div>
-              </div>
-              <div class="tools tags"><span class="tag">Python</span><span class="tag">2D-DFT</span><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Xception CNN</span></div>
-              <div class="foot"><a href="https://github.com/ROIEIHI/Freq_Deepfake_Detection">Code repository →</a></div>
-            </div>
-          </article>
-        </div>
-
-        <!-- ---- DOMAIN: SIGNAL & IMAGE PROCESSING ---- -->
-        <div class="domain">
-          <div class="domain-head"><span class="code">04 · SIGNAL &amp; IMAGE PROCESSING</span><h3>Classical DSP &amp; image pipelines</h3><span class="line"></span></div>
-
-          <article class="project" id="dwt">
-            <div class="project-media">
-              <div class="gallery" data-gallery>
-                <div class="slides">
-                  <figure class="slide is-active"><img src="images/dwt_denoise.png" alt="Voltage-sag signal reconstructed by the reproduced adaptive DWT thresholding method" /><figcaption>Voltage-sag reconstruction via the reproduced adaptive DWT method</figcaption></figure>
-                  <figure class="slide"><img src="images/dwt_snr.png" alt="Output SNR versus input SNR for the adaptive method against hard and soft thresholding" /><figcaption>Output vs. input SNR · adaptive method vs. hard/soft</figcaption></figure>
-                </div>
-                <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
-                <div class="gallery-dots"></div>
-              </div>
-            </div>
-            <div class="project-body">
-              <h4>Adaptive Wavelet Denoising of Power-Quality Signals</h4>
-              <div class="or-block">
-                <div class="row"><span class="k">Objective</span><p class="v">Reproduce and critically evaluate a published energy-optimized, scale-adaptive wavelet thresholding method (Goh et al.) for preserving the sharp transient edges of a voltage sag while removing AWGN — a case where a single global threshold either over-smooths the event or leaves noise behind.</p></div>
-                <div class="row"><span class="k">Result</span><p class="v">A MATLAB pipeline reproducing the method's Peak-to-Sum-Ratio thresholds, critical-scale selection, and |D1| modulus-maxima edge detection benchmarked it against hard and soft thresholding across a 0–35 dB input-SNR sweep. The adaptive method was consistently competitive to best, but its margin over the simple baselines was narrow — a practical limitation the original paper understates.</p></div>
-              </div>
-              <div class="tools tags"><span class="tag">MATLAB</span><span class="tag">Wavelets (DWT)</span><span class="tag">Modulus maxima</span><span class="tag">Signal processing</span></div>
-              <div class="foot"><span class="lead-tag">Paper reproduction</span></div>
-            </div>
-          </article>
-
-          <article class="project reverse" id="lowlight">
-            <div class="project-media">
-              <div class="gallery" data-gallery>
-                <div class="slides">
-                  <figure class="slide is-active"><img src="images/lowlight_forest.jpg" alt="Original dark forest scene next to JND-SNRF and Double-Function Retinex enhanced versions, with entropy, contrast, PSNR and LOE annotated" /><figcaption>Original vs. JND-SNRF vs. Double-Function Retinex enhancement</figcaption></figure>
-                  <figure class="slide"><img src="images/lowlight_room.jpg" alt="Original dark indoor scene next to JND-SNRF and Double-Function Retinex enhanced versions, with entropy, contrast, PSNR and LOE annotated" /><figcaption>Second test scene · same two algorithms, same metrics</figcaption></figure>
-                </div>
-                <div class="gallery-nav"><button type="button" data-prev aria-label="Previous figure">‹</button><button type="button" data-next aria-label="Next figure">›</button></div>
-                <div class="gallery-dots"></div>
-              </div>
-            </div>
-            <div class="project-body">
-              <h4>Low-Illumination Image Enhancement: Retinex vs. Nonlinear Mapping</h4>
-              <div class="or-block">
-                <div class="row"><span class="k">Objective</span><p class="v">Reproduce and benchmark two published low-light / nonuniform-illumination enhancement algorithms — a dual-branch (log + tanh) Retinex method and a JND/Naka-Rushton-based nonlinear tone-mapping method (SNRF) — on real non-uniformly lit photos.</p></div>
-                <div class="row"><span class="k">Result</span><p class="v">Both algorithms were reimplemented in MATLAB and scored with Entropy, RMS contrast, PSNR, and Lightness-Order-Error (LOE) against the originals. Across test scenes, the Retinex method consistently gained more entropy (more recovered detail) but at a larger tonal deviation (lower PSNR, higher LOE), while the JND-SNRF method made a more conservative, order-preserving correction — a clear detail-vs-fidelity trade-off between the two published approaches.</p></div>
-              </div>
-              <div class="tools tags"><span class="tag">MATLAB</span><span class="tag">Retinex theory</span><span class="tag">JND / Naka-Rushton</span><span class="tag">Image quality metrics</span></div>
-              <div class="foot"><span class="lead-tag">With Gal · paper reproduction</span></div>
             </div>
           </article>
         </div>

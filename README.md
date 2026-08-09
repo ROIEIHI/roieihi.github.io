@@ -69,7 +69,7 @@ This is why it's a plain static site — every change is a one-sentence request.
 - "Replace the antenna figures with these three PNGs I just added to images/."
 - "Add a new project card under RF & Antennas for my transmission-line design, same format as the others."
 - "Fill in the DL/CV card: objective, result, and link to this repo."
-- "Change the accent color from teal to a deep blue and update the hero trace to match."
+- "Change the accent color from teal to a deep blue and update the notch dividers to match."
 - "Add a Work Experience page linked from the nav."
 
 ---
@@ -88,7 +88,7 @@ portfolio/
 
 ## Design notes
 
-- **Signature:** the hero is a swept frequency-response trace (an S11 resonance dip) — the frequency domain is the through-line across your photonics, RF, and signal-processing work. It draws on load and reappears as the thin notch dividers.
+- **Signature:** a swept frequency-response trace (an S11 resonance dip) — the frequency domain is the through-line across your photonics, RF, and signal-processing work — reappears as the thin notch dividers between sections.
 - **Palette:** cool "graticule paper" with a phosphor-teal scope-trace accent; amber used only as a second trace.
 - **Type:** Space Grotesk (display) + IBM Plex Sans / Mono (body + instrument-readout labels).
 - Responsive to mobile, keyboard-focus visible, respects `prefers-reduced-motion`. Content stays visible with JavaScript disabled.
