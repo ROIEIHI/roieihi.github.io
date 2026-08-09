@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Colour-channel spectra: real vs. fake">
+  <defs>
+    <marker id="arw" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#0D1B2A"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="#FFFFFF"/>
+  <rect x="0.5" y="0.5" width="799" height="499" fill="none" stroke="#D9E0E7" stroke-width="1"/>
+  <text x="64" y="38" font-family="IBM Plex Mono, monospace" font-size="17" font-weight="500" fill="#0D1B2A">Colour-channel spectra: real vs. fake</text>
+  <text x="760" y="38" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12" fill="#7A8895">placeholder — swap in your export</text>
+  <line x1="133.6" y1="70" x2="133.6" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="203.2" y1="70" x2="203.2" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="272.8" y1="70" x2="272.8" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="342.4" y1="70" x2="342.4" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="412.0" y1="70" x2="412.0" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="481.6" y1="70" x2="481.6" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="551.2" y1="70" x2="551.2" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="620.8" y1="70" x2="620.8" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="690.4" y1="70" x2="690.4" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="122.3" x2="760" y2="122.3" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="174.6" x2="760" y2="174.6" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="226.9" x2="760" y2="226.9" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="279.1" x2="760" y2="279.1" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="331.4" x2="760" y2="331.4" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="383.7" x2="760" y2="383.7" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="70" x2="64" y2="436" stroke="#0D1B2A" stroke-width="1.5"/>
+<line x1="64" y1="436" x2="760" y2="436" stroke="#0D1B2A" stroke-width="1.5"/>
+  <polyline points="64.0,349.5 72.7,335.7 81.4,347.8 90.1,357.3 98.8,344.2 107.5,359.8 116.2,359.7 124.9,341.9 133.6,333.2 142.3,342.5 151.0,356.5 159.7,345.0 168.4,354.1 177.1,357.7 185.8,344.3 194.5,340.2 203.2,338.5 211.9,337.0 220.6,317.7 229.3,318.1 238.0,328.5 246.7,323.4 255.4,302.5 264.1,292.2 272.8,280.0 281.5,298.0 290.2,260.3 298.9,246.3 307.6,260.1 316.3,226.1 325.0,232.6 333.7,193.1 342.4,204.2 351.1,191.5 359.8,158.8 368.5,154.7 377.2,155.9 385.9,149.8 394.6,144.5 403.3,138.2 412.0,114.8 420.7,135.5 429.4,141.7 438.1,128.6 446.8,158.5 455.5,164.8 464.2,159.5 472.9,185.8 481.6,205.0 490.3,214.2 499.0,224.3 507.7,220.8 516.4,245.4 525.1,269.7 533.8,260.4 542.5,290.7 551.2,286.4 559.9,311.3 568.6,299.1 577.3,319.5 586.0,336.6 594.7,335.7 603.4,339.4 612.1,332.9 620.8,348.0 629.5,353.4 638.2,340.8 646.9,340.6 655.6,332.8 664.3,360.0 673.0,348.1 681.7,356.4 690.4,345.2 699.1,351.6 707.8,333.7 716.5,342.3 725.2,358.5 733.9,362.1 742.6,342.2 751.3,362.1 760.0,348.6" fill="none" stroke="#0E8C82" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="round" opacity="0.9"/><polyline points="64.0,337.3 72.7,342.8 81.4,335.6 90.1,340.0 98.8,323.5 107.5,352.1 116.2,322.3 124.9,367.1 133.6,312.9 142.3,333.0 151.0,367.7 159.7,364.6 168.4,353.1 177.1,339.2 185.8,315.7 194.5,326.0 203.2,322.6 211.9,342.6 220.6,297.5 229.3,310.6 238.0,334.1 246.7,338.1 255.4,312.6 264.1,306.3 272.8,271.2 281.5,299.5 290.2,274.4 298.9,267.8 307.6,242.8 316.3,251.8 325.0,235.8 333.7,198.4 342.4,216.0 351.1,215.1 359.8,197.1 368.5,171.3 377.2,146.1 385.9,144.2 394.6,152.1 403.3,157.8 412.0,125.4 420.7,121.7 429.4,153.6 438.1,144.3 446.8,131.0 455.5,182.4 464.2,188.3 472.9,214.3 481.6,196.3 490.3,207.6 499.0,228.7 507.7,239.3 516.4,228.9 525.1,282.1 533.8,254.0 542.5,300.7 551.2,265.8 559.9,273.3 568.6,300.7 577.3,336.2 586.0,291.2 594.7,310.8 603.4,307.6 612.1,341.7 620.8,319.3 629.5,350.1 638.2,315.2 646.9,349.9 655.6,355.4 664.3,352.3 673.0,365.1 681.7,347.4 690.4,361.7 699.1,317.4 707.8,331.3 716.5,335.6 725.2,367.9 733.9,316.7 742.6,313.7 751.3,332.8 760.0,327.3" fill="none" stroke="#D98A2B" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="round" opacity="0.8"/><text x="551" y="125" font-family="IBM Plex Mono, monospace" font-size="13" fill="#0E8C82">real</text><text x="551" y="172" font-family="IBM Plex Mono, monospace" font-size="13" fill="#D98A2B">fake</text>
+  <text x="412" y="478" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#7A8895">Frequency</text>
+  <text x="22" y="253" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#7A8895" transform="rotate(-90 22 253)">Log energy</text>
+</svg>

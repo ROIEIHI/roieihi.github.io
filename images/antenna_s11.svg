@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="S11 — resonance at 915 MHz">
+  <defs>
+    <marker id="arw" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#0D1B2A"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="#FFFFFF"/>
+  <rect x="0.5" y="0.5" width="799" height="499" fill="none" stroke="#D9E0E7" stroke-width="1"/>
+  <text x="64" y="38" font-family="IBM Plex Mono, monospace" font-size="17" font-weight="500" fill="#0D1B2A">S11 — resonance at 915 MHz</text>
+  <text x="760" y="38" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12" fill="#7A8895">placeholder — swap in your export</text>
+  <line x1="133.6" y1="70" x2="133.6" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="203.2" y1="70" x2="203.2" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="272.8" y1="70" x2="272.8" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="342.4" y1="70" x2="342.4" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="412.0" y1="70" x2="412.0" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="481.6" y1="70" x2="481.6" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="551.2" y1="70" x2="551.2" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="620.8" y1="70" x2="620.8" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="690.4" y1="70" x2="690.4" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="122.3" x2="760" y2="122.3" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="174.6" x2="760" y2="174.6" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="226.9" x2="760" y2="226.9" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="279.1" x2="760" y2="279.1" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="331.4" x2="760" y2="331.4" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="383.7" x2="760" y2="383.7" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="70" x2="64" y2="436" stroke="#0D1B2A" stroke-width="1.5"/>
+<line x1="64" y1="436" x2="760" y2="436" stroke="#0D1B2A" stroke-width="1.5"/>
+  <polyline points="64.0,124.9 71.0,124.9 77.9,124.9 84.9,124.9 91.8,124.9 98.8,124.9 105.8,124.9 112.7,124.9 119.7,124.9 126.6,124.9 133.6,124.9 140.6,124.9 147.5,124.9 154.5,124.9 161.4,124.9 168.4,124.9 175.4,124.9 182.3,124.9 189.3,124.9 196.2,124.9 203.2,124.9 210.2,124.9 217.1,124.9 224.1,124.9 231.0,124.9 238.0,124.9 245.0,124.9 251.9,124.9 258.9,124.9 265.8,124.9 272.8,124.9 279.8,124.9 286.7,125.0 293.7,125.1 300.6,125.4 307.6,125.9 314.6,127.0 321.5,129.0 328.5,132.4 335.4,138.2 342.4,147.2 349.4,160.6 356.3,179.2 363.3,203.5 370.2,233.2 377.2,267.0 384.2,302.4 391.1,335.9 398.1,363.6 405.0,382.0 412.0,388.4 419.0,382.0 425.9,363.6 432.9,335.9 439.8,302.4 446.8,267.0 453.8,233.2 460.7,203.5 467.7,179.2 474.6,160.6 481.6,147.2 488.6,138.2 495.5,132.4 502.5,129.0 509.4,127.0 516.4,125.9 523.4,125.4 530.3,125.1 537.3,125.0 544.2,124.9 551.2,124.9 558.2,124.9 565.1,124.9 572.1,124.9 579.0,124.9 586.0,124.9 593.0,124.9 599.9,124.9 606.9,124.9 613.8,124.9 620.8,124.9 627.8,124.9 634.7,124.9 641.7,124.9 648.6,124.9 655.6,124.9 662.6,124.9 669.5,124.9 676.5,124.9 683.4,124.9 690.4,124.9 697.4,124.9 704.3,124.9 711.3,124.9 718.2,124.9 725.2,124.9 732.2,124.9 739.1,124.9 746.1,124.9 753.0,124.9 760.0,124.9" fill="none" stroke="#0E8C82" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" opacity="1.0"/><circle cx="412.0" cy="388.4" r="5" fill="#0E8C82"/><text x="422.0" y="380.4" font-family="IBM Plex Mono, monospace" font-size="15" fill="#0D1B2A">m1: 915 MHz</text>
+  <text x="412" y="478" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#7A8895">Frequency (GHz)</text>
+  <text x="22" y="253" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#7A8895" transform="rotate(-90 22 253)">dB(S11)</text>
+</svg>

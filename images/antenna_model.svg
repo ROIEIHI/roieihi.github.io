@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="PIFA in boot heel counter (HFSS)">
+  <defs>
+    <marker id="arw" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#0D1B2A"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="#FFFFFF"/>
+  <rect x="0.5" y="0.5" width="799" height="499" fill="none" stroke="#D9E0E7" stroke-width="1"/>
+  <text x="64" y="38" font-family="IBM Plex Mono, monospace" font-size="17" font-weight="500" fill="#0D1B2A">PIFA in boot heel counter (HFSS)</text>
+  <text x="760" y="38" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12" fill="#7A8895">placeholder — swap in your export</text>
+  <line x1="133.6" y1="70" x2="133.6" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="203.2" y1="70" x2="203.2" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="272.8" y1="70" x2="272.8" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="342.4" y1="70" x2="342.4" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="412.0" y1="70" x2="412.0" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="481.6" y1="70" x2="481.6" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="551.2" y1="70" x2="551.2" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="620.8" y1="70" x2="620.8" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="690.4" y1="70" x2="690.4" y2="436" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="122.3" x2="760" y2="122.3" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="174.6" x2="760" y2="174.6" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="226.9" x2="760" y2="226.9" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="279.1" x2="760" y2="279.1" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="331.4" x2="760" y2="331.4" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="383.7" x2="760" y2="383.7" stroke="#D9E0E7" stroke-width="1"/>
+<line x1="64" y1="70" x2="64" y2="436" stroke="#0D1B2A" stroke-width="1.5"/>
+<line x1="64" y1="436" x2="760" y2="436" stroke="#0D1B2A" stroke-width="1.5"/>
+  <g stroke="#0D1B2A" stroke-width="2" fill="none" stroke-linejoin="round">
+      <polygon points="203,308 496,363 621,271 328,216" fill="#0E8C82" fill-opacity="0.10"/>
+      <polygon points="203,308 328,216 328,151 203,242" fill="#0D1B2A" fill-opacity="0.06"/>
+      <polygon points="328,216 621,271 621,205 328,151" fill="#0D1B2A" fill-opacity="0.10"/>
+    </g><path d="M 259 282 L 412 308 L 412 260 L 482 275" stroke="#D98A2B" stroke-width="2.4" fill="none"/>
+  <text x="412" y="478" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#7A8895"></text>
+  <text x="22" y="253" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#7A8895" transform="rotate(-90 22 253)"></text>
+</svg>
