@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roie Ihia - Electrical & Electronics Engineer</title>
+  <title>Roie Ihia - B.Sc Electrical & Electronics Engineer</title>
   <meta name="description" content="Engineering portfolio of Roie Ihia - silicon photonics, RF & antenna design, and signal-processing / machine-learning pipelines." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +45,7 @@
         <div class="about-card">
           <div class="about-grid">
             <div class="intro-copy">
-              <p>I'm an M.Sc. student in Electro-Optics (Direct Track, cumulative average 97, expected Aug 2027) and a 4th-year B.Sc. student in Signal Processing &amp; Communication (average 92.5, expected Aug 2026) at the Holon Institute of Technology (HIT), focused on the simulation and validation of optical systems. My research centers on ML-driven optical-device simulation: a first-author Bayesian-optimization pipeline coupled to Lumerical multi-physics solvers, and a co-authored real-world optical-sensor data-acquisition study validated across 187 participants.</p>
+              <p>I'm an M.Sc. student in Electro-Optics (Direct Track, cumulative average 97, expected Aug 2027) and a 4th-year B.Sc. student in Signal Processing &amp; Communication (average 92.75, expected Aug 2026) at the Holon Institute of Technology (HIT), focused on the simulation and validation of optical systems. My research centers on ML-driven optical-device simulation: a first-author Bayesian-optimization pipeline coupled to Lumerical multi-physics solvers, and a co-authored real-world optical-sensor data-acquisition study validated across 187 participants.</p>
               <p>I build automated Python/MATLAB simulation and data-acquisition environments that bridge simulated and measured data. That range shows up across my projects - a body-worn antenna simulated in HFSS, a circular-waveguide mode analysis, and critical reproductions of a deepfake detector, a wavelet-denoising method, and a low-light image-enhancement method that tested where each published claim holds up. I care as much about honest evaluation as about a clean result.</p>
             </div>
             <div class="skills">
@@ -88,7 +88,7 @@
             <div class="pub-index">[1]</div>
             <div>
               <span class="pub-status">Status: Manuscript in review</span>
-              <h3>Sample-Efficient Optimization of a Forward-Bias PIN Electro-Optic Phase Shifter with RC-Equalizer for Datacom Applications</h3>
+              <h3>Sample-Efficient Optimization of a Forward-Bias PIN Electro-Optic Phase Shifter</h3>
               <p class="authors"><span class="me">R. Ihia</span>, I. Shalem, D. Malka · Holon Institute of Technology</p>
               <p class="summary">A closed-loop, machine-learning-driven design method co-optimizes a silicon-photonic modulator (efficiency vs. optical loss) in only 150 multi-physics simulations, then extends its electro-optic bandwidth from 6.25 GHz to 24.9 GHz with a passive RC equalizer for 25 Gbps operation.</p>
               <div class="pub-links">
@@ -147,7 +147,7 @@
               <div class="or-block">
                 <div class="row"><span class="k">Objective</span><p class="v">Co-optimize a forward-bias PIN modulator's competing metrics - modulation efficiency and optical loss - which the plasma-dispersion effect couples into a nonlinear trade-off that one-factor sweeps cannot solve.</p></div>
                 <div class="row"><span class="k">Result</span><p class="v">A Gaussian-process surrogate driving Lumerical multi-physics located a valid design in 150 simulations, raising the valid-design rate from 22% to 80% and reaching V<sub>π</sub>L = 0.649 V·mm at 15.2 dB/cm, holding within ±0.26% efficiency and ±4.5% loss across the full O-band.</p></div>
-                <div class="row"><span class="k">Bandwidth</span><p class="v">The device's extracted small-signal parameters (C<sub>F</sub> = 0.347 pF, R<sub>F</sub> = 10.55 kΩ) set an intrinsic 6.25 GHz bandwidth; a passive RC equalizer sized by zero-pole cancellation pushed that to 24.9 GHz for 25 Gbps operation, raising the eye's Q-factor from 5.45 to 12.66.</p></div>
+                <div class="row"><span class="k">Bandwidth</span><p class="v">The device's extracted small-signal parameters set an intrinsic 6.25 GHz bandwidth; a passive RC equalizer sized by zero-pole cancellation pushed that to 24.9 GHz for 25 Gbps PAM-2 operation.</p></div>
               </div>
               <div class="tools tags"><span class="tag">Python</span><span class="tag">Bayesian optimization</span><span class="tag">Gaussian process</span><span class="tag">Lumerical CHARGE/FDE</span><span class="tag">MATLAB</span></div>
               <div class="foot"><span class="lead-tag">First-author paper</span><a href="https://github.com/ilaish5/PIN_Opt">Code repository →</a></div>
