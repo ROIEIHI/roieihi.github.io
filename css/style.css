@@ -134,13 +134,15 @@ img { max-width: 100%; display: block; }
 /* =========================================================================
    About (incl. intro header — name + CTAs, formerly the hero)
    ========================================================================= */
-.intro-head { margin-bottom: clamp(2.2rem, 5vw, 3.2rem); }
+.intro-head { text-align: center; margin-bottom: clamp(1.6rem, 4vw, 2.2rem); }
+.intro-head .eyebrow { display: block; }
 .intro-head h1 {
   font-family: var(--font-display); font-weight: 700;
   font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.02; letter-spacing: -0.03em;
-  margin: 0 0 1.3rem;
+  margin: 0 0 .6rem;
 }
-.hero-cta { display: flex; flex-wrap: wrap; gap: .7rem; }
+.intro-head .section-title { margin: 0 auto; max-width: 42ch; }
+.hero-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: .7rem; margin-top: clamp(1.8rem, 4vw, 2.6rem); }
 
 .btn {
   font-family: var(--font-mono); font-size: .85rem; letter-spacing: .02em;
@@ -152,16 +154,17 @@ img { max-width: 100%; display: block; }
 .btn-primary:hover { background: #14293d; }
 .btn-ghost { background: transparent; color: var(--ink); }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent-ink); }
+.profile-photo-lg {
+  width: clamp(120px, 16vw, 168px); height: clamp(120px, 16vw, 168px); border-radius: 50%;
+  object-fit: cover; border: 1px solid var(--line); box-shadow: var(--shadow);
+  margin: 0 auto clamp(1.8rem, 4vw, 2.6rem);
+}
+.about-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+  box-shadow: var(--shadow); padding: clamp(1.3rem, 2.5vw, 2rem);
+}
 .about-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: clamp(1.5rem,4vw,3.5rem); align-items: start; }
 .about-grid p { margin-top: 0; color: var(--ink-2); }
-.intro-row { display: flex; gap: 1.5rem; align-items: flex-start; }
-.profile-photo {
-  width: 128px; height: 128px; border-radius: 50%; object-fit: cover;
-  border: 1px solid var(--line); box-shadow: var(--shadow); flex-shrink: 0;
-}
-@media (max-width: 520px) {
-  .intro-row { flex-direction: column; align-items: center; text-align: center; }
-}
 .skills h3 { font-family: var(--font-mono); font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 .6rem; }
 .skills .group + .group { margin-top: 1.3rem; }
 .tags { display: flex; flex-wrap: wrap; gap: .45rem; }
